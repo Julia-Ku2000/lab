@@ -1,0 +1,95 @@
+<!DOCTYspanE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>Лабараторная работа 2</title>
+<style>
+@keyframes animation{
+from{
+right:0;
+opacity:1;
+position:absolute;
+transform:rotate(0deg);
+}
+to{
+right:100%;
+opacity:0;
+position:absolute;
+transform:rotate(360deg);
+}
+}
+
+.customText{
+text-shadow:1px 1px 2px green;
+background-origin:content-box;
+
+}
+.text{
+color: #FF0000	;
+font-style:italic;
+}
+.customPlacement1{
+position:relative;
+height:200px;
+width:400px;
+left:100px;
+}
+.customPlacement2{
+position:relative;
+height:200px;
+width:400px;
+top:-50px;
+left:50px;
+}
+.customPlacement3{
+position:relative;
+height:200px;
+width:400px;
+top:-100px;
+background-image:url("2.jpg")
+}
+.customPlacement4{
+position:absolute;
+}
+.movingImage{
+position:absolute;
+animation-name :animation;
+animation-iteration-count:infinite;
+animation-duration:5s;
+z-index:1;
+animation-direction:alternate;
+}
+.customPlacement5{
+
+filter: alpha(Opacity=25);
+opacity: 0.25; 
+}
+
+.customCol{
+column-count:4;  
+
+}
+.customPlacement6{
+position:absolute;
+right:0%;
+top:2%;
+}
+
+  </style>
+<body>
+<img src="4.jpg" class="movingImage" alt="Chmok" width="20%"/>
+<table align=center width="100%" >
+<th>
+<td align=center class="customText" width="50%" >
+<img src="1.jpg" alt="шахта1" class="customPlacement1" />
+<img src="3.jpg" alt="шахта2" class="customPlacement2"/>
+<table class="customPlacement3" >
+<th ><span class=text>Ша</span>хта</th>
+<tr><td><span class=text>Пр</span>офессия <span class=text>ша</span>хтёра <span class=text>сч</span>итается <span class=text>в</span> <span class=text>на</span>ши <span class=text>дн</span>и <span class=text>од</span>ной <span class=text>из</span> <span class=text>са</span>мых <span class=text>оп</span>асных <span class=text>и</span> <span class=text>эк</span>стремальных, <span class=text>её</span> <span class=text>вы</span>бирают <span class=text>са</span>мые <span class=text>му</span>жественные <span class=text>и</span> <span class=text>см</span>елые <span class=text>лю</span>ди.</td></tr>
+</table>
+</td>
+<td align=center class="customText customCol"><img src="5.jpg" class="customPlacement6 customPlacement5"><span class=text>Ша́</span>хта—<span class=text>пр</span class=text>омышленное <span class=text>пр</span>едприятие, <span class=text>ос</span>уществляющее <span class=text>до</span>бычу <span class=text>по</span>лезных <span class=text>ис</span>копаемых <span class=text>с</span> <span class=text>по</span>мощью <span class=text>си</span>стемы <span class=text>по</span>дземных <span class=text>го</span>рных <span class=text>вы</span>работок.</td>
+</th>
+</table>
+</body>
+</head>
